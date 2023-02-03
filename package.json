@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "nodemon": "^2.0.19",
+    "pug": "^3.0.2"
+  }
+}
