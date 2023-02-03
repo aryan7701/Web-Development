@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h3>This is Html forms </h3>
+    <form action="backend.php">
+        <label for="Name">Name</label>
+        <div>
+             <input type="text" name="MyName" id="Name">
+        </div>
+        <br>
+        <label for="MyRole">Role</label>
+        <div>
+            <input type="text" name="MyRole" id="MyRole">
+        </div>
+        <br>
+        <label for="EmailId">Email</label>
+        <div>
+             <input type="email" name="MyEmail" id="EmailId">
+        </div>
+        <br>
+        <label for="MyDate">Date</label>
+        <div>
+            <input type="date" name="Date" id="MyDate">
+        </div>
+        <br>
+        <label for="MyBonus">Date</label>
+        <div>
+             <input type="number" name="mybonus" id="MyBonus">
+        </div>
+        <br>
+        <label for="MyEligiblity">Are you Eligible</label>
+        <div>
+            <input type="checkbox" name="Eligiblity" id="MyEligiblity">
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="MyGender"> Female <input type="radio" name="MyGender"> Other <input type="radio" name="MyGender">
+        </div>
+        <br>
+        <label for="car">Cars</label>
+        <div>
+            <select name="MyCar" id="car">
+                <option value="suz" selected>Dzire</option>
+                <option value="Kia">kia</option>
+                <option value="MG">MGHector</option>
+                <option value="Honda">Citz</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            Write about Yourself:<br> <textarea name="MyText"  cols="60" rows="10"></textarea> 
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit">     
+            <input type="reset" value="Clear Form">
+        </div>        
+    </form>
+</body>
+</html>
