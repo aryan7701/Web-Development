@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors And More Designing</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        .container{
+            border: 3px solid red;
+            background-color: rgb(223, 223, 223);
+            padding:9px;
+            margin: 35px auto;
+            width: 720px;
+        }
+        body{
+            background-color: rgb(178, 227, 225);
+            font-family: 'Ubuntu','sans-serif';
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: black;
+            background-color: cornsilk;
+        }
+        a:visited{
+            /*color: aquamarine;*/
+            background-color: crimson;
+        }
+        a:active{
+            background-color: blue;
+        }
+        .btn{
+            background-color: darkgrey;
+            padding: 6px;
+            border: none;
+            cursor:pointer;
+            font-size: 15px;
+            border-radius: 4.4px;
+        }
+        .btn:hover{
+            color: black;
+            background-color: rgb(251, 232, 160);
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+    <h3>Styling Links & Buttons</h3>
+    <p id="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, quisquam? Sequi accusamus nulla atque iusto dolores fugiat pariatur at exercitationem perspiciatis laborum. Ex fugit consequuntur, non omnis quis nulla iste dicta voluptas aut, facilis dolore!</p>
+    <a href="https://google.com" target="_blank" class="btn">Read More</a>
+    <button class="btn">Contact Us</button>
+    </div>
+
+</body>
+</html>
