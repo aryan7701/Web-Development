@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing By Usig Cascading Style Sheets</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid blue;
+            background-color: cornsilk;
+            height:3060px;
+        }
+        /*CSS Position: static(default),relative,absolute fixed, sticky*/
+        .box{
+            display: inline-block;
+            border: 2px solid red;
+            width: 180px;
+            height: 180px;
+            margin: 6px;
+            padding: 3.5px;
+        }
+        #box3{
+            /*Position relative : relative to its normal position*/
+            /*position:relative;*/
+
+            /*Position absolute: relative to its first parent position*/
+            /*position: absolute;
+            top: 35px;
+            left: 35px;*/
+
+            /*Position Fixed*/
+            /*position: fixed;
+            right:6px;
+            bottom:3.5px;*/
+
+            position: sticky;
+            top:4.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, fugiat nemo adipisci minima itaque sunt dolore odit eveniet sequi, repellendus voluptatibus neque doloremque perspiciatis.</div>
+    <div class="box" id="box2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non dolore harum earum omnis delectus, totam iste corrupti quos. Eveniet odit doloremque architecto corrupti consequatur!
+    </div>
+    <div class="box" id="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur blanditiis recusandae, pariatur voluptatem sapiente quibusdam voluptate corporis tempore? Tenetur ipsam incidunt</div>
+    <div class="box" id="box4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium id aut optio vitae, rerum quod fugiat atque doloribus, illum commodi animi quia est alias perferendis, inventore </div>
+</div>
+    
+</body>
+</html>
