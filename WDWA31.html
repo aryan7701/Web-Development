@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /*if p is contained by any li whixh is contained by div*/
+        /*div li{
+            color: yellow;
+            background-color: blueviolet;
+            font-weight: bold;
+
+        }*/
+
+        /*if p is right inisde div then this css will be applied*/
+        /*div > p{
+            color: yellow;
+            background-color: blueviolet;
+            font-weight: bold;
+        }*/
+
+        /*if p is right after div i.e p is the next sibiling of div*/
+        /*div +p{
+            color: white;
+            background-color: tomato;
+        }*/
+    </style>
+</head>
+<body>
+    <h1>This is the fiorst paragraph of the websitess</h1>
+    <div class="conatiner">
+        <div class="row">
+            <ul>
+                <li class="item"><p> is the unordered List in the another paragraph</p></li>
+                <li>This is another unordered list in div</li>
+                <p>This is a paragraph inside an unorderedlist</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is an another paragraph</p>
+    </div>
+    <p>This is the outermost  paragraph</p>
+</body>
+</html>
