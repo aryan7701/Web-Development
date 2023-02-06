@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform Property </title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            height: 70vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            display: flex;
+            height: 240px;
+            width: 240px;
+            background-color: greenyellow;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            border: 2px solid black;
+            /*box-shadow: 2px 2px yellow;*/
+            transition: all 1s ease-in-out;
+        }
+        .box:hover{
+            transform: rotate(360deg);
+            transform: skew(40deg);
+            transform: scale(2);
+            transform: translateX(123px);
+            transform: translateY(123px);
+            transform: translate(123px, 123px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">In This Tutorial We will Understand About CSS Transform</div>
+    </div>
+</body>
+
+</html>
