@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid with Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'nav nav nav nav'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        /**/
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: yellow;
+            }
+
+            .container {
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            body {
+                background-color: greenyellow;
+            }
+
+            .container {
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            body {
+                background-color: blueviolet;
+            }
+
+            .container {
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 800px) {
+            body {
+                background-color: blue;
+            }
+        }
+
+        /**/
+        .btr {
+            border: 2px solid black;
+            background-color: rgb(74, 241, 230);
+            padding: 23px;
+        }
+
+        nav {
+            grid-area: nav;
+
+        }
+
+        section {
+            grid-area: section;
+
+        }
+
+        aside {
+            grid-area: aside;
+
+        }
+
+        footer {
+            grid-area: footer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="btr">
+            Home About Contact
+        </nav>
+        <section class="btr">
+            <h2>Learn CSS in Hindi</h2>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, sunt! Optio exercitationem nostrum
+            quisquam! Aliquid porro, nulla commodi, eos dolores libero itaque impedit tenetur magnam optio
+            exercitationem! Numquam exercitationem soluta voluptates. Quidem maiores earum ea culpa velit nam sint
+            maxime. Quasi minima velit consectetur quidem fugiat fugit error impedit sapiente omnis, voluptate enim
+            neque blanditiis suscipit dignissimos illo at eos vel doloremque eveniet esse veniam modi soluta. Sed ipsam
+            ut tempora explicabo deserunt laborum id. Minima odio laudantium reiciendis repellendus iste doloribus.
+            Placeat sapiente velit id nobis cupiditate eius vitae, sed rerum eum vel veritatis dolores, ea molestiae
+            consectetur, amet eos magnam incidunt distinctio dolorem. Dolor quis in ea laborum labore voluptates
+            temporibus tempora explicabo, pariatur omnis hic libero amet asperiores perspiciatis praesentium id sunt?
+        </section>
+        <aside class="btr">
+            <h1>More about Us</h1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi aperiam nemo odio? Aspernatur omnis
+            eligendi adipisci distinctio pariatur labore maiores minus nobis? Porro officiis sit quia animi nostrum fuga
+            consequatur. Quis ipsa illo cumque reiciendis expedita vitae, dolorum suscipit distinctio amet neque labore
+            corrupti eligendi harum praesentium accusamus, nesciunt quas corporis laboriosam error quisquam? Ea maiores,
+            accusamus adipisci a repellat possimus non, quos aspernatur tempore praesentium provident error! Nesciunt
+            illum ratione ab laborum deleniti error, rem deserunt reiciendis consectetur? Impedit pariatur officiis eum
+            consequuntur optio aliquid. Animi possimus quis eos?
+        </aside>
+        <footer class="btr">Copyright Under Aryan@2020 </footer>
+    </div>
+</body>
+
+</html>
