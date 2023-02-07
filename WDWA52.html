@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays And Objects</title>
+</head>
+<body>
+    <div class="container">Simple Si HTML</div>
+    <script>
+        let myVar= 34;
+        let myVar1 = "String";
+        let myVar2 = true;
+        let myVar3 = null;
+        let myVar5 = undefined;
+
+        let employee = {
+            name: "Aryan",
+            salary: 999,
+            channel:"CoderOp",
+            ["channel  2"]:"ProgrammerOp",
+        } 
+        console.log(employee);
+
+        //let names=[1,2,4,"Aryan", undefined];
+        //console.log(names[1]);
+        //let names= new Array(41, 2 ,4,"Aryan",undefined);
+        let names = new Array(23);
+        console.log(names.length);
+        names=names.sort();
+        names.push("Arjun");
+        console.log(names);
+    </script>
+</body>
+</html>
