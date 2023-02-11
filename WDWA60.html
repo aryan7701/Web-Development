@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrows Functions</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="Broken"  class="container">
+        this is about arrow functions
+    </div>
+    <script>
+        //Arrow function
+        //function greet(){
+        //    console.log("Good Morning");
+        //}
+
+        //let greet= ()=>{
+        //    console.log("Good Morning");
+        //}
+        let greet= ()=>console.log("Good Morning");
+        greet();
+        
+        //sum1= function sum(a,b){
+        //    return a+b;
+        //}
+
+
+        //let sum2= (a,b) =>{
+        //    return a+b;
+        //};
+        //sum2(2,6);
+
+        let sum3= (a,b) => a+b;
+        let half = a =>a/2;
+
+        setTimeout(()=>{
+            console.log("Police is always late like this  on the scene");
+        },3000);
+
+        let obj2={
+            greeting:"Ohiao Gosaimas: ",
+            names:["Aryan","Abhinsv","Adesh","Rocky"],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log(this.greeting + "Kuckdoon koo" + student)
+                });
+            }
+
+        }
+        obj2.speak();
+    </script>
+</body>
+</html>
