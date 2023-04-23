@@ -1,0 +1,19 @@
+{
+  "name": "tut69",
+  "version": "1.0.0",
+  "description": "This is the most awesome particles in the universe which can reverse time flow",
+  "main": "tut9.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "awesome"
+  ],
+  "author": "\"Aryan\"",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "nodemon": "^2.0.19",
+    "slugify": "^1.3.5"
+  }
+}
