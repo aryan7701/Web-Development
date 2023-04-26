@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts
+    style(src='/static/index.js')
+
+block style
+    style
+        include ../static/style.css
+
+block content    
+    section#IntroSection
+        div Welcome To Radhikah's Dance Academy 
+        div.small Dance like you've never danced before
+      
+    section#MissionSection
+        h2 Our Mission  
+        div.card
+          h3 Different Dance Types  
+          div.card-box 
+              div.card-img 
+                  img(src="/static/img/Dancea.jpg")
+              div.card-content 
+                  p This is the best Dance Acdemy in Mumbai With Different Dance Cultures.
+        div.card
+          h3 Dance Perfection
+          div.card-box 
+              div.card-img 
+                  img(src="/static/img/Danceb.jpg")
+              div.card-content 
+                  p This Dance Academy ensures the perfection in dance to every students within 3 Months.
+        div.card
+          h3 Expert Teaching
+          div.card-box 
+              div.card-img 
+                  img(src="/static/img/Dancec.jpg")
+              div.card-content 
+                  p In this Dance Acdemy the Experts itself teaches and also demonstarte special moves.
+    
+    section#SponsorsSection
+        h2 Our Sponsors 
+        div#sponsors 
+            img(src="/static/img/amazon1.png", alt="Spoansor Image", class="Spimage")
+            img(src="/static/img/apple.png", alt="Spoansor Image", class="Spimage")
+            img(src="/static/img/HP1.png", alt="Spoansor Image", class="Spimage")
+            img(src="/static/img/lenovo1.png", alt="Spoansor Image", class="Spimage")

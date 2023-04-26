@@ -1,0 +1,59 @@
+//- index.pug
+doctype html
+html
+  head
+    title Radhikah Dance Academy 
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul 
+            div#logo 
+                img(src="/static/img/Logo1.png")
+                | RDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Contact Us]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+    
+    section#IntroSection
+        div Welcome To Radhikah's Dance Academy 
+        div.small Dance like you've never danced before
+      
+    section#MissionSection
+        h2 Our Mission  
+        div.card
+          h3 Different Dance Types  
+          div.card-box 
+              div.card-img 
+                  img(src="/static/img/Dancea.jpg")
+              div.card-content 
+                  p This is the best Dance Acdemy in Mumbai With Different Dance Cultures.
+        div.card
+          h3 Dance Perfection
+          div.card-box 
+              div.card-img 
+                  img(src="/static/img/Danceb.jpg")
+              div.card-content 
+                  p This Dance Academy ensures the perfection in dance to every students within 3 Months.
+        div.card
+          h3 Expert Teaching
+          div.card-box 
+              div.card-img 
+                  img(src="/static/img/Dancec.jpg")
+              div.card-content 
+                  p In this Dance Acdemy the Experts itself teaches and also demonstarte special moves.
+    
+    section#SponsorsSection
+        h2 Our Sponsors 
+        div#sponsors 
+            img(src="/static/img/amazon1.png", alt="Spoansor Image", class="Spimage")
+            img(src="/static/img/apple.png", alt="Spoansor Image", class="Spimage")
+            img(src="/static/img/HP1.png", alt="Spoansor Image", class="Spimage")
+            img(src="/static/img/lenovo1.png", alt="Spoansor Image", class="Spimage")
+
+    footer#Footer
+        | Copyright © 2022 RadhikahDanceAcademy.com | All rights reserved
+    script
+      include ../static/index.js
